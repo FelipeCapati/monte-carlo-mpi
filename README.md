@@ -6,8 +6,20 @@ sudo apt-get install mpich-doc
 # Command to install dependencies
 pip install requirements.txt
 
+# Command to test MPI installation
+mpirun -n 4 python test/mpi_test.py
+ou
+chmod +x job_mpi_test.sh
+./job_mpi_test.sh
+
 # Save requirements.txt
 pip freeze > requirements.txt
+
+# Command to Run Monte Carlo MPI Project
+mpirun -n 4 python main.py
+ou
+chmod +x job_run.sh
+./job_run.sh
 
 # Comandos Random
 Install with Anaconda: 
