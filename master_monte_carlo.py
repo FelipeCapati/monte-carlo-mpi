@@ -13,7 +13,7 @@ comm = MPI.COMM_SELF.Spawn(sys.executable,
 rank = comm.Get_rank()
 
 # Configure total number of integration
-n_total = np.array(80000, 'i')
+n_total = np.array(8000000, 'i')
 
 # Init Monte Carlo Work
 now = datetime.now()
@@ -42,8 +42,6 @@ v_figura = round(v_total * (n_fig / float(requesition*MAXPROCS)), 2)
 # End Monte Carlo Work
 time_process = round((datetime.now() - now).total_seconds(), 2)
 
-print("> rank(%s) :: Volume: %s :: TimeToProcess: %s" %(rank, v_figura, time_process))
+print("> rank(%s) :: Iterations: %s Volume: %s :: TimeToProcess: %s" %(rank, requesition*MAXPROCS, v_figura, time_process))
 
 comm.Disconnect()
-
-print("a")

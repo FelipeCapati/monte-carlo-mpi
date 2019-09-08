@@ -33,10 +33,6 @@ $ mpirun -n 4 python script.py
 
 
 
-
-
-
-
 https://mpi4py.readthedocs.io/en/stable/tutorial.html#running-python-scripts-with-mpi
 
 Dynamic Process Management
