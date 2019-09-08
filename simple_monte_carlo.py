@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 from datetime import datetime
-from mpi4py import MPI
-from math import floor
 from random import uniform
 import numpy as np
-import sys
+
+# Initialize
+print("############################################################")
+print("##################### Code without MPI #####################")
+print("############################################################")
 
 # Configure total number of integration
-n_total = np.array(10000000, 'i')
+n_total = np.array(1000000, 'i')
 
 # Init Monte Carlo Work
 now = datetime.now()

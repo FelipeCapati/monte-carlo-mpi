@@ -1,2 +1,3 @@
 #!/bin/bash
-mpirun -n 4 python master_monte_carlo.py
+python simple_monte_carlo.py
+mpirun -n 4 python mpi_monte_carlo.py

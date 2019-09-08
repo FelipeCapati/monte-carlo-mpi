@@ -5,7 +5,7 @@ import numpy as np
 import math
 
 # Configure total number of integration
-n_total = np.array(500000000, 'i')
+n_total = np.array(1000000, 'i')
 
 # Init Monte Carlo Work
 now = datetime.now()
@@ -29,6 +29,11 @@ lim_z_max = 2
 
 # If Master Rank
 if rank == 0:
+    # Initialize
+    print("############################################################")
+    print("####################### Code with MPI ######################")
+    print("############################################################")
+
     # Send MPI Broadcast requisition
     requesition = np.array(math.floor(n_total / TOTAL_NODE), 'i')
     for node in range(1, TOTAL_NODE):
@@ -59,7 +64,7 @@ if rank == 0:
     # End Monte Carlo Work
     time_process = round((datetime.now() - now).total_seconds(), 2)
 
-    print("> rank(%s) :: Iterations: %s Volume: %s :: TimeToProcess: %s" %(rank, requesition * TOTAL_NODE, v_figura, time_process))
+    print("> MPI Monte Carlo :: rank(%s) :: Iterations: %s Volume: %s :: TimeToProcess: %s" %(rank, requesition * TOTAL_NODE, v_figura, time_process))
 
 
 # If Slave Rank
