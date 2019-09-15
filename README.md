@@ -89,7 +89,7 @@ Em que para (9) temos o volume exemplificado para N pontos na figura a seguir:
 
 Dado os resultados vistos em IV podemos inferir que o Método de Integração de Monte Carlo é funcional, 
 converge ao valor real de (9) com cerca 30.000 iterações e que o tempo de processamento tem um comportamento 
-exponencial crescente proporcional a N tanto para o cálculo da integral utilizando MPI, quanto para integral 
+crescente proporcional a N tanto para o cálculo da integral utilizando MPI, quanto para integral 
 sem o MPI.<br>
 Para essa análise 30.000 iterações foram suficientes, porém vale ressaltar que o valor de N é função do 
 problema proposto, ou seja, varia para cada aplicação do modelo.<br> 
