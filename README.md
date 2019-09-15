@@ -109,7 +109,7 @@ apoiaram em meio a dificuldades.
 [1]	R. E. Caflisch, “Monte Carlo and quasi-Monte Carlo methods” Mathematics Department, UCLA, Los Angeles, CA, USA, 1998.<br>
 [2]	W. Fellen, An Introduction to Probability Theory and its Application, vol. 1. Wiley, 1971.
  
-## VII. APÊNDICE ##
+## VIII. APÊNDICE ##
 
 ### A. Comandos para instalar o MPI no Linux ###
 sudo apt-get install libcr-dev 
