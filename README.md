@@ -1,4 +1,4 @@
-# Análise da Integral de Monte Carlo
+# Análise da Integral Numérica de Monte Carlo #
 
 ### Abstract ###
 
